@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body{
+		background: yellow;
+	}
+		div{
+			width:450px;
+			height:638px;
+			background: red;
+			transition: 1s;
+			transform: rotateY(-90deg);
+			transform-origin: center center;
+		}
+		/*div:hover{
+			transform: rotateY(0deg);
+		}*/
+	</style>
+</head>
+<body>
+	<div id='div'>上</div>
+	<script>
+		setTimeout(function(){
+			div.style.transform='rotateY(0deg)'
+		},1000)
+	</script>
+</body>
+</html>
